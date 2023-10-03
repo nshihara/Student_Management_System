@@ -36,3 +36,32 @@
     transform: rotate(360deg);
   }
 }
+/* App.css */
+
+/* Container for the Tabs component */
+.custom-tabs-container {
+  padding: 5px;
+  background-color: #e4e1e1;
+  color: #fff;
+}
+
+/* Style for individual tab labels */
+.custom-tab-pane {
+  background-color: #ffffff;
+  padding: 12px 20px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  margin-right: 4px;
+  font-size: 16px;
+  color: #faf6f6;
+  transition: background-color 0.3s ease;
+}
+
+/* Style for the active tab label */
+.custom-tab-pane.ant-tabs-tab-active {
+  background-color: #636262;
+  color: #fff;
+}
+.custom-tab-pane.label{
+  color: #faf6f6;
+}

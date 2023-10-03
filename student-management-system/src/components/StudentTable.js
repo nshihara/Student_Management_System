@@ -1,11 +1,11 @@
-import React from 'react';
-import { Table, Space, Button, Tag } from 'antd';
+import React, { useState, useEffect } from 'react';
+import { Table, Space, Button } from 'antd';
 
 const columns = [
   {
     title: 'Student ID',
-    dataIndex: 'ID',
-    key: 'ID',
+    dataIndex: 'id',
+    key: 'id',
     render: (text) => <a>{text}</a>,
   },
   {
@@ -41,34 +41,41 @@ const columns = [
     ),
   },
 ];
-
-const data = [
-  {
-    key: '1',
-    ID: '1',
-    name: 'John Brown',
-    age: 32,
-    address: 'New York No. 1 Lake Park',
-    gender: 'male',
-    tags: ['nice', 'developer'],
-  },
-];
 const handleView = (record) => {
     // Implement logic for viewing student information
-    console.log(`Viewing student with ID ${record.ID}`);
+    console.log(`Viewing student with ID ${record.id}`);
   };
-  
+
   const handleEdit = (record) => {
     // Implement logic for editing student information
-    console.log(`Editing student with ID ${record.ID}`);
+    console.log(`Editing student with ID ${record.id}`);
   };
-  
+
   const handleDelete = (record) => {
     // Implement logic for deleting student information
-    console.log(`Deleting student with ID ${record.ID}`);
+    console.log(`Deleting student with ID ${record.id}`);
   };
-const StudentTable = () => (
-  <Table columns={columns} dataSource={data} />
-);
+const StudentTable = () => {
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Fetch data from the API
+    fetch('https://run.mocky.io/v3/66e829ea-b690-4eaa-821a-0fd17c0fcbf3')
+      .then((response) => response.json())
+      .then((responseData) => {
+        setData(responseData);
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.error('Error fetching data:', error);
+        setLoading(false);
+      });
+  }, []);
+
+
+
+  return <Table columns={columns} dataSource={data} loading={loading} />;
+};
 
 export default StudentTable;

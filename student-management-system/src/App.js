@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import StudentTable from './components/StudentTable'; 
+import Header from './components/header';
 import './App.css';
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
 
   return (
     <div className="App">
-
+          <Header /> 
           <StudentTable/>
     </div>
   );
