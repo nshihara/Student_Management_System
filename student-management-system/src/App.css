@@ -65,3 +65,84 @@
 .custom-tab-pane.label{
   color: #faf6f6;
 }
+
+.inputfields{
+  width: 200px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.searchbtn{
+  margin-left: 30px;
+  margin-right: 30px;
+  background-color: #0c0c0caf;
+}
+.clearbtn{
+  margin-right: -470px;
+  background-color: #0707072d;
+}
+.alert{
+  width: fit-content;
+  margin-top: -50px;
+  margin-bottom: 50px;
+  margin-left: 20%;
+}
+
+/* styles.css */
+
+.custom-form {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.custom-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.custom-radio-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.custom-textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.custom-button {
+  background-color: #070707;
+  color: #fff;
+  border: none;
+  padding-bottom: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 55%;
+}
+
+.custom-view-details-modal {
+  /* Style the modal background */
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.custom-details-container {
+  /* Style the details container */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.custom-details-container p {
+  margin-bottom: 10px;
+}
+
