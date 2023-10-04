@@ -32,7 +32,7 @@ const StudentTable = () => {
       key: "action",
       render: (_, record) => (
         <Space size="middle">
-          <Button type="primary" onClick={() => handleView(record)}>
+          <Button type="default" onClick={() => handleView(record)}>
             View
           </Button>
           <Button type="default" onClick={() => handleEdit(record)}>
@@ -186,7 +186,7 @@ const StudentTable = () => {
         )}
       </Modal>
       <div style={{ textAlign: "right", marginTop: "16px", marginRight: "120px" }}>
-        <Button type="primary" onClick={() => setIsAddModalOpen(true)}>
+        <Button type="primary" onClick={() => setIsAddModalOpen(true)} className="addbtn">
           Add Student
         </Button>
       </div>

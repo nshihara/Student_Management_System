@@ -80,6 +80,9 @@
   margin-right: -470px;
   background-color: #0707072d;
 }
+.addbtn{
+  background-color: #809edfc5;
+}
 .alert{
   width: fit-content;
   margin-top: -50px;
@@ -128,12 +131,10 @@
 }
 
 .custom-view-details-modal {
-  /* Style the modal background */
   background-color: rgba(0, 0, 0, 0.5); 
 }
 
 .custom-details-container {
-  /* Style the details container */
   padding: 20px;
   background-color: #fff;
   border-radius: 4px;
