@@ -109,7 +109,7 @@ const StudentTable = () => {
   };
 
   useEffect(() => {
-    fetch("https://run.mocky.io/v3/e5dbf20e-af35-4e64-9316-e6007ac7fceb")
+    fetch("http://localhost:3000/student")
       .then((res) => res.json())
       .then((result) => {
         setDataSource(result.student);
@@ -235,7 +235,7 @@ const StudentTable = () => {
           </Form.Item>
           <Form.Item >
             <Button type="primary" htmlType="submit"  className="custom-button">
-              Add Student
+              Submit
             </Button>
           </Form.Item>
 

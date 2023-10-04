@@ -81,7 +81,7 @@
   background-color: #0707072d;
 }
 .addbtn{
-  background-color: #809edfc5;
+  background-color: #404f70c5;
 }
 .alert{
   width: fit-content;
@@ -127,7 +127,7 @@
   padding-bottom: 20px;
   border-radius: 4px;
   cursor: pointer;
-  margin-left: 55%;
+  margin-left: 63%;
 }
 
 .custom-view-details-modal {
