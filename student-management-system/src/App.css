@@ -85,8 +85,7 @@
 }
 .alert{
   width: fit-content;
-  margin-top: -50px;
-  margin-bottom: 50px;
+  margin-top: -55px;
   margin-left: 20%;
 }
 
@@ -130,9 +129,9 @@
   margin-left: 63%;
 }
 
-.custom-view-details-modal {
+/* .custom-view-details-modal {
   background-color: rgba(0, 0, 0, 0.5); 
-}
+} */
 
 .custom-details-container {
   padding: 20px;
